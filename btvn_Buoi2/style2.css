@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #f1f5f9;
+    color: #212b36;
+}
+
+.wrapper{
+    padding: 15px;
+    margin: auto;
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    border-radius: 3%;
+    margin-top: 80px;
+    box-shadow: rgb(16, 15, 15);
+
+}
+
+.form{
+    padding: 25px 20px;
+}
+
+h2{
+    color: #624bff;
+    margin-bottom: 15px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+div{
+    display: block;
+}
+
+label{
+    cursor:default;
+
+}
+.input-box input{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 15px 10px;
+    margin: 15px 0px;
+    font-size:1rem;
+    text-align: left ;
+}
+
+.remember input{
+    margin-top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+
+button{
+    color: #ffffff;
+    background-color:#624bff;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 15px 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+button:visited{
+    background-color:#624bff;
+}
+button:hover{
+    background-color: rgb(52, 23, 137);
+}
+
+.other_links{
+    margin-top: 20px;
+    display: inline;
+    font-size: 1rem;
+    
+}
+
+.one{
+    color:#624bff;
+    text-decoration: none;
+}
+.two{
+    color: black;
+    margin-left: 55px;
+    text-decoration: none;
+
+}
