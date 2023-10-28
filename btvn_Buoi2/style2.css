@@ -8,14 +8,15 @@
 body{
     background-color: #f1f5f9;
     color: #212b36;
+    font-family: Inter;
 }
 
 .wrapper{
     padding: 15px;
     margin: auto;
     background-color: #ffffff;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     border-radius: 3%;
     margin-top: 80px;
     box-shadow: rgb(16, 15, 15);
@@ -95,7 +96,7 @@ button:hover{
 }
 .two{
     color: black;
-    margin-left: 55px;
+    margin-left: 105px;
     text-decoration: none;
 
 }
