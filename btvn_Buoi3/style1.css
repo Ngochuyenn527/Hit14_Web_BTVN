@@ -1,0 +1,44 @@
+*{ /* (*all) */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*.container{
+    display : flex;
+    flex-direction:column or row from top to bottom
+    flex-direction: column-reverse or row-reverse from bottom to top
+    justify-content: center, flex-end, flex-start
+    flex-wrap: wrap or nowrap;
+
+} */
+
+.HIT14{  /*  (.class) */
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* căn đều trên dưới */
+    height: 100vh;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.ont, .four, .five, .eight, .nine{
+    margin-left: 50px;
+}
+
+.five, .seven{
+    margin-bottom: 200px;
+}
+
+.nine{
+    margin-bottom: 100px;
+}
+
+
+
+

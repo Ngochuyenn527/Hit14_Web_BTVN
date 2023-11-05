@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.chessboard{
+    display: flex;
+    justify-content: center; /* căn đều trái phải*/
+    align-items: center;  /* căn đều trên dưới */
+    height: 100vh;
+}
+
+.square1{
+    height: 50px;
+    width: 50px;
+    background-color: #ffce9e;
+}
+
+.square2{
+    height: 50px;
+    width: 50px;
+    background-color: #d18b47;
+}
+

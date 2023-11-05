@@ -43,7 +43,7 @@ div{
 
 label{
     cursor:default;
-
+    
 }
 .input-box input{
     width: 100%;
@@ -76,9 +76,6 @@ button{
     font-size: 1rem;
 }
 
-button:visited{
-    background-color:#624bff;
-}
 button:hover{
     background-color: rgb(52, 23, 137);
 }

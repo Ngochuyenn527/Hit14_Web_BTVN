@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+}
+
+.web{
+    padding: 50px 60px;
+    display: block;
+}
+
+p{
+    font-family: monospace;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+.image{
+    margin-top: 30px;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row > img {
+    width: 450px;
+    height: 450px;
+    margin: 15px;
+}
+
+.content{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+}
+
+.content-1{
+    justify-content: center;
+    text-align: center;
+}
+
+.content-img{
+    padding: 50px 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.list{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.column{
+    padding: 5px 100px 55px 9px;
+    margin: 15px;
+    justify-content: space-around;
+
+}
+
+.grey{
+    color: grey;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.end-right > i{
+    height: 60px;
+    width: 60px;
+    border-radius: 50% ;
+    background-color: rgb(237, 232, 232);
+    padding: 18px;
+    font-size: 25px;
+}
