@@ -4,14 +4,7 @@
     border: 0;
     box-sizing: border-box;
 }
-/*.container{
-    display : flex;
-    flex-direction:column or row from top to bottom
-    flex-direction: column-reverse or row-reverse from bottom to top
-    justify-content: center, flex-end, flex-start
-    flex-wrap: wrap or nowrap;
 
-} */
 
 .HIT14{  /*  (.class) */
     display: flex;

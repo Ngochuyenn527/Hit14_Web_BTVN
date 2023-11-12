@@ -42,13 +42,12 @@ p{
 
 .row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .row > img {
-    width: 450px;
-    height: 450px;
-    margin: 15px;
+    width: 30%;
+    padding: 15px;
 }
 
 .content{
