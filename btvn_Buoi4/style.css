@@ -5,11 +5,26 @@
     box-sizing: border-box;
 }
 
-
-body{
-    width: 100vw;
-    overflow-x:hidden;
+:root {
+    --primary-color: #0563bb;
+    --text-color: #272829;
+    --header-color: #45505b;
 }
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -35,9 +50,8 @@ body{
     display: flex;
     justify-content: center;
     background-color: #f2f3f5;
-    color: #45505b;
+    color: var(--header-color); /*or color: #45505b; */
     overflow: hidden;
-    transition: width 0.3s ease-in-out;
     text-decoration: none;
 }
 
@@ -49,8 +63,10 @@ body{
 
 #nav > .nav_item:hover{
     width: 120px;
-    background-color: rgb(51, 51, 219);
+    background-color:var(--primary-color);
     color:white;
+    transition: width 0.3s ease-in-out;
+
 }
 
 #nav .nav_item:hover span{
@@ -59,7 +75,7 @@ body{
 
 #nav span{
     display: none;
-    margin: 0 20px;
+    margin: 0 14px;
 }
 
 /* Banner */
@@ -70,19 +86,28 @@ body{
     overflow: hidden;
     background: url(https://bootstrapmade.com/demo/templates/MyResume/assets/img/hero-bg.jpg) no-repeat;
     background-size: 100%;
-
     padding-left: 200px;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
+}
 
+#banner .overlay {  /* làm mờ ảnh */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+#banner > .infor-flex{
+    margin: 180px 0;
+    position: absolute; /* Đặt toàn bộ nội dung lên trên : absolute trên relative */
 }
 
 #banner .name {
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #485563;
+    color:var(--header-color);
 }
 
 
@@ -95,10 +120,9 @@ body{
 }
 
 #banner .introduce span:last-child {
-    background-color:#f2f3f5;
-    color: #0563bb;
+    color: var(--primary-color);
     margin-left: 15px;
-    border-right: 4px solid #0563bb;
+    border-right: 4px solid var(--primary-color);
     font-size: 36px;
     letter-spacing: 5px;
     overflow: hidden;
@@ -144,30 +168,32 @@ section {
 .heading {
     font-size: 32px;
     line-height: 38px;
-    color: #45505b;
+    color: var(--header-color);
     position: relative;
     padding-bottom: 10px;
     display: flex;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
 }
 
-.heading::before{
-    height: 6px;
-    width: 40px;
-    background-color: #0e5497;
-}
-
+/* tạo after và before trước rồi tẹo setup lại before sau */
 .heading::after, .heading::before{
     content: "";
     display: block;
     position: absolute;
     height: 1px;
-    width: 100px;
-    background-color: #45505b;
+    width: 80px;
+    background-color: var(--header-color);
     bottom: 0;
 
 }
+
+.heading::before{
+    height:3px;
+    width: 40px;
+    background-color: var(--primary-color);
+}
+
 
 section .detail {
     margin: 30px;
@@ -285,7 +311,7 @@ section .flex {
 #skills .progress-bar::after {
     content: "";
     position: absolute;
-    height: 10px;
+    height: 15px;
     background-color: #4c74c4;
     width: var(--percent);
 }
@@ -308,9 +334,36 @@ section .flex {
     background: white;
 }
 
+#services .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #services .icon svg{
     position: relative;
 }
+
+#services .icon i{
+    position: absolute;
+    font-size: 35px;
+}
+
+/* hover #services .infor  */
+  #services .infor:hover > .icon i {
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+#services .infor:hover > .icon path {
+    transition: all 0.3s ease-in-out;
+    fill: #47aeff;
+}
+
+#services .infor:hover {
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08)
+}
+
 
 
 /* Contact */
@@ -327,7 +380,7 @@ section .flex {
 
 #contact .infor{
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     align-items: center;
 }
 #contact .icon{
@@ -341,12 +394,8 @@ section .flex {
     justify-content: center;
 }
 
-#contact .name{
-    margin-bottom: 4px;
-}
-
 #contact .right{
-    width: 60%;
+    width: 55%;
 }
 #contact .right .line-1{
     display: flex;
@@ -361,7 +410,7 @@ section .flex {
         width: 100%;
         border: 1px solid grey;
         border-radius: 3px;
-        padding: 15px 10px;
+        padding: 25px 10px;
         margin: 15px 0px;
         font-size:1rem;
         text-align: left ;
@@ -393,7 +442,7 @@ section .flex {
     background-color: rgb(52, 23, 137);
 }
 
-
+/* footer */
 footer{
     text-align: center;
     padding: 30px 0;
@@ -401,8 +450,8 @@ footer{
 
 }
 
-
 footer h2 {
+    font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #45505b;
 }
@@ -425,6 +474,20 @@ footer .social-media a  {
     border-radius: 50%;
     font-size: 24px;
     padding: 12px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    color: #fff;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 
