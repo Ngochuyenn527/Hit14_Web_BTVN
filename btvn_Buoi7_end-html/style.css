@@ -85,12 +85,14 @@ header{
 
 .search:hover i{
     background-color: var(--red-color);
+    color: white;
 }
 
 /* HOME */
 #home img{
     width: 100%;
     position: relative;
+    top: 46px;
 }
 
 #home .infor {
@@ -289,7 +291,7 @@ section p{
     display: flex;
     justify-content: center;
 }
-.icons > i{
+.icons i{
     display: flex;
     align-items: center; /* trên dưới */
     justify-content: center; /*trái phải */
